@@ -1,0 +1,41 @@
+#info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid red 3px; */
+}
+
+#name {
+    margin-top: 10px;
+}
+
+#name h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#abilities {
+    margin-top: 30px;
+}
+
+#abilities ul li {
+    list-style-type: circle;
+    text-align: center;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+#selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#selection #sel {
+    background-color: goldenrod;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
