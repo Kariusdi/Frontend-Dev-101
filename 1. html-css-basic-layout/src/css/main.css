@@ -1,0 +1,13 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 7rem;
+}
+
+#hskills-pic {
+    width: 100%;
+}
+
+#sskills-pic {
+    width: 100%;
+}
