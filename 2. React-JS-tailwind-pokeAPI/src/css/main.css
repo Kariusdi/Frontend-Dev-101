@@ -1,70 +1,82 @@
 #poke-status {
-    background-color: black;
-    height: 750px;
-    color: white;
+  background-color: black;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#load {
+  align-self: center;
+  margin: 30px;
+}
+
+#poke-pic {
+  width: 500px;
+  align-self: center;
 }
 
 #poke-fav {
-    background-color:goldenrod;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 750px;
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 #poke-fav h2 {
-    font-size: 1.7rem;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #333;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
 }
 
 #poke-fav p {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 #card {
-    background-color: whitesmoke;
-    height: 240px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 25px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #card:hover {
-    box-shadow: 0px 5px 1px #ca0d0d;
-  }
-  
-  #card img {
-    width: 150px;
-    margin-bottom: 10px;
-  }
-  
-  #card h1 {
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #333;
-    font-size: larger;
-  }
-  
-  #action {
-    display: flex;
-    align-items: center;
-  }
-  
-  #action #del {
-    margin-left: 15px;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: smaller;
-    color: red;
-    font-weight: bold;
-  }
-  
+  background-color: whitesmoke;
+  height: 95%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card:hover {
+  box-shadow: 0px 5px 1px #ca0d0d;
+}
+
+#card img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#card h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #333;
+  font-size: larger;
+}
+
+#action {
+  display: flex;
+  align-items: center;
+}
+
+#action #del {
+  margin-left: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: smaller;
+  color: red;
+  font-weight: bold;
+}

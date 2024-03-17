@@ -63,27 +63,31 @@ function App() {
 
   return (
 
-    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+    <div className='w-1vh grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
       <div id='poke-status'>
-        <InfoPoke poke={poke} id={id}/>
+        
 
         {loading 
-          ? <ReactLoading type="spinningBubbles" color="#fff" />
-          : <img id='poke-pic' src={poke?.sprites?.other?.home?.front_default} alt="" />
+          ? <div id="load"><ReactLoading type="spinningBubbles" color="#fff" /></div>
+          : <>
+              <InfoPoke poke={poke} id={id}/>
+              <img id='poke-pic' src={poke?.sprites?.other?.home?.front_default} alt="" />
+            </> 
         }
         
         <div id="selection">
-          <button id="sel" onClick={PreviousPoke}>Prev Character</button>
+          <button id="sele" onClick={PreviousPoke}>Prev Character</button>
           <button id='fav-button' onClick={AddPoke}>Add to Arena</button>
-          <button id="sel" onClick={NextPoke}>Next Character</button>
+          <button id="sele" onClick={NextPoke}>Next Character</button>
         </div>
+        
       </div>
 
       <div id='poke-fav'>
-        <h2>Your Team Arena</h2>
+        <h2>Your Arena Team</h2>
         {fav.length < 1 
           ? <p>Team is empty</p>
-          : <div className='grid overflow-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3'>
+          : <div className='grid overflow-auto grid-cols-3'>
               {fav.map((character, idx) => (
                   <div id='card' key={idx}>
                       <h1>{character.name}</h1>
